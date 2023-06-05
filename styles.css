@@ -2,6 +2,35 @@ html {box-sizing: border-box;}
 
 *, *::before, *::after {box-sizing: inherit;}
 
-body {
-  
+.dropdown-option-container {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 500ms;
+}
+
+.dropdown-option-container > * {
+  overflow: hidden;
+}
+
+.dropdown-option-container.expanded {
+  grid-template-rows: 1fr;
+}
+
+.dropdown-btn:hover {
+  background-color: darkmagenta;
+}
+
+.dropdown-btn {
+  border: none;
+  background-color: pink;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
 }
